@@ -2,7 +2,7 @@
 // Common interface for Project Euler solutions
 // Copyright (c) 2018 Balint Gyevnar
 
-namespace PESolutions
+namespace ProjectEulerSolutions
 {
     /// <summary>
     /// Provides common interface for solutions

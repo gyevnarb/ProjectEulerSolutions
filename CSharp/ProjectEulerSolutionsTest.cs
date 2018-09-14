@@ -1,13 +1,17 @@
+//
+// Test file for all PE questions
+// Copyright (c) 2018 Balint Gyevnar
+
 ﻿using System;
 
-namespace PESolutions
+namespace ProjectEulerSolutions
 {
-    public sealed class PESolutionsTest
+    public sealed class ProjectEulerSolutionsTest
     {
         // Testing all solutions
         public static void Main(string[] args)
         {
-            AssertEquals("233168", new S001().Run());
+            AssertEquals("233168", new S1().Run());
 
             Console.WriteLine("All tests ran succesfuly.");
         }
