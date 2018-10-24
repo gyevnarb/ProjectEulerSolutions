@@ -1,3 +1,4 @@
+// ProjectEulerSolutionsTest.cs
 //
 // Test file for all PE questions
 // Copyright (c) 2018 Balint Gyevnar
@@ -12,8 +13,10 @@ namespace ProjectEulerSolutions
         public static void Main(string[] args)
         {
             AssertEquals("233168", new S1().Run());
+            AssertEquals("4613732", new S2().Run());
 
             Console.WriteLine("All tests ran succesfuly.");
+            Console.ReadLine();
         }
 
         // Simple method to test equality
