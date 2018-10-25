@@ -1,4 +1,4 @@
--- https://projectbalint.com/en/page/project-euler-solutions/#problems
+-- https://github.com/gyevnarb/ProjectEulerSolutions/tree/master/Haskell
 -- h1.hs
 --
 -- Solution for first Project Euler problem
