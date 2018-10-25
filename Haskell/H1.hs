@@ -1,4 +1,5 @@
 -- https://projectbalint.com/en/page/project-euler-solutions/#problems
+-- h1.hs
 --
 -- Solution for first Project Euler problem
 -- Copyright (c) 2018 Balint Gyevnar
