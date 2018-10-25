@@ -1,4 +1,5 @@
-// https://projectbalint.com/en/page/project-euler-solutions/#problems
+// https://projectbalint.com/en/page/project-euler-solutions/Java
+// J1.java
 //
 // Solution for first Project Euler problem
 // Copyright (c) 2018 Balint Gyevnar
@@ -10,7 +11,6 @@
  *
  */
 public class J1 implements ISolution {
-
 	/**
 	 * Numbers are small and bounded, brute force solution suffices
 	 */
@@ -26,4 +26,9 @@ public class J1 implements ISolution {
 		return Integer.toString(ans);
 	}
 
+	@Override
+	public int problemNumber() {
+		return 1;
+	}
+	
 }
