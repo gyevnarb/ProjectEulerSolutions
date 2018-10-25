@@ -1,10 +1,8 @@
 -- https://github.com/gyevnarb/ProjectEulerSolutions/tree/master/Haskell
--- h1.hs
+-- h2.hs
 --
--- Solution for first Project Euler problem
+-- Solution for second Project Euler problem
 -- Copyright (c) 2018 Balint Gyevnar
-
--- Numbers remain small and problem stays tractable, so brute force is ideal in this case
 
 {-# LANGUAGE OverloadedStrings #-}
 import Text.Printf
@@ -13,13 +11,19 @@ import Formatting
 import Formatting.Clock
 import System.Clock
 
+-- Calculate asnwer with top-down dynamic programming
+fib :: Integer -> [Integer]
+fib 1 = [1, 0]
+fib n = (a + b) : x
+  where x@(a:b:_) = fib (n - 1)
+
 run :: Integer
-run = sum [x | x <- [1..999], (x `mod` 3 == 0) || (x `mod` 5 == 0)]
+run = sum [x | x <- fib 50, x < 4000000, x `mod` 2 == 0]
 
 main :: IO ()
 main = do
   start <- getTime Monotonic
   let answer = run
   end <- getTime Monotonic
-  printf "Problem 1: %d - Elapsed time " answer
+  printf "Problem 2: %d - Elapsed time " answer
   fprint (timeSpecs % "\n") start end
