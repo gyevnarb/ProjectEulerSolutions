@@ -11,9 +11,9 @@ namespace ProjectEulerSolutions
 {
     /// <summary>
     /// Solution for second Project Euler problem
-    /// 
-    /// Calculate Fibonacci numbers using bottom-up dynamic programming algorithm until limit is reached. 
-    /// Code runs in linear time with respect to the size of the cutoff.
+    ///
+    /// Calculate Fibonacci numbers using bottom-up dynamic programming algorithm until limit is reached.
+    /// Code runs in linear time with respect to the size of the fib-array, but the loop is also limited by the cutoff.
     /// </summary>
     public sealed class S2 : ISolution
     {
